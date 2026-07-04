@@ -1,6 +1,6 @@
 # Unreleased Proof Bundles
 
-`cellulose` should use the same proof-bundle idea as other YggdrasilHQ apps:
+Cellulose should use the same proof-bundle idea as other YggUI-based apps:
 
 - feature manifest
 - summary
