@@ -1,51 +1,34 @@
 # Cellulose
 
-Cellulose is an open source spreadsheet and financial modeling workspace.
+Spreadsheets are the most-used programming environment on earth, and finance runs on them. Yet your options are Excel, which is proprietary and closed, or a free clone that quietly breaks compatibility and feels foreign the moment you build anything real.
 
-The project is early scaffolding. The intended product is a focused, modern
-spreadsheet environment with strong compatibility discipline, finance-oriented
-modeling defaults, and first-class automation.
+Cellulose is an open-source spreadsheet and financial-modeling workspace that takes compatibility seriously. Familiar grid semantics, finance-oriented modeling defaults, and first-class automation, free to use and yours to keep. It works on its own, and it embeds cleanly into Yggterm and other YggUI-based apps.
 
-## Direction
+## What Cellulose is for
 
-Cellulose is designed around:
-
-- familiar spreadsheet semantics for cells, ranges, formulas, formatting, and
-  workbook behavior
-- financial modeling standards, auditability, scenarios, assumptions, and review
-  workflows
-- FMI-oriented modeling conventions where they apply
-- configurable keyboard maps and command organization
-- YggUI-style app-control, traces, deterministic automation, and proof bundles
+- familiar spreadsheet behavior for cells, ranges, formulas, formatting, and workbooks
+- financial modeling with auditability, scenarios, assumptions, and review workflows
+- configurable keyboard maps and command organization, so the muscle memory you already have keeps working
+- automation, traces, deterministic testing, and proof bundles built in, the YggUI way
 - a clean embedding boundary for Yggterm and other YggUI-based apps
 
-Compatibility with established spreadsheet behavior is a core product goal.
-Innovation should happen in automation, observability, finance workflows, and
-clarity of implementation rather than by surprising users with incompatible grid
-semantics.
+Compatibility with established spreadsheet behavior is a core goal, not an afterthought. The innovation belongs in automation, observability, finance workflows, and clarity of implementation, not in surprising you with a grid that behaves differently from the one you know.
 
-## Relationship To Yggterm
+## Standalone and embedded
 
-The standalone Cellulose app owns workbook navigation, including a sheets tree.
+On its own, Cellulose owns workbook navigation, including a sheets tree.
 
-When embedded in Yggterm, Cellulose should act as a single-sheet workspace
-surface selected from Yggterm's metadata tree. The embedded variant should use
-Yggterm's left navigation, keep the right-side command surface available, and
-store Yggterm-owned sheet data under the active Yggterm state home.
+Embedded in Yggterm, Cellulose becomes a single-sheet workspace surface chosen from Yggterm's tree. It uses Yggterm's left navigation, keeps the right-side command surface available, and stores Yggterm-owned sheet data under the active Yggterm state home.
 
-## Repository Status
+## Status
 
-This repository currently contains public project scaffolding only. It is not
-ready for end-user installation.
+Cellulose is early. This repository is public scaffolding and direction, not yet an installable app.
 
-## Docs
+Read the direction in [docs/product.md](docs/product.md), and the shape in [docs/architecture.md](docs/architecture.md), [docs/design.md](docs/design.md), and [docs/protocol.md](docs/protocol.md).
 
-- [Product direction](docs/product.md)
-- [Architecture](docs/architecture.md)
-- [Design](docs/design.md)
-- [Protocol](docs/protocol.md)
+## License
 
-## Licensing
-
-- Code: Apache License 2.0
-- Markdown docs: CC BY-SA 4.0
+- Code: Apache-2.0, see `LICENSE-APACHE`
+- Documentation: CC BY-SA 4.0, see `LICENSE-CC-BY-SA-4.0`
+- Names and logos: see `TRADEMARKS.md`
+- Summary in `LICENSE`
